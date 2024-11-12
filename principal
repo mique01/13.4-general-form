@@ -1,9 +1,11 @@
+\section*{4.4. Cambio de Variable en el Tiempo}
+
 Recordemos que en la siguiente ecuación, \( t \) es el tiempo actual.
 \[
 \frac{\partial f}{\partial t} + (r - \lambda k)x \frac{\partial f}{\partial x} + \frac{1}{2} \sigma^2 x^2 \frac{\partial^2 f}{\partial x^2} - rf +
 
 
-\section*{1. Cambio de Variable en el Tiempo}
+\section*{4.4.1. Cambio de Variable en el Tiempo}
 
 Para facilitar el trabajo, se introduce una nueva variable \( \tau = T - t \), donde \( T \) es el tiempo de vencimiento y \( t \) es el tiempo actual. Esto convierte a \( \tau \) en el "tiempo hasta el vencimiento". La ecuación de valuación se transforma en:
 
@@ -11,7 +13,7 @@ Para facilitar el trabajo, se introduce una nueva variable \( \tau = T - t \), d
 - \frac{\partial f}{\partial \tau} + (r - \lambda k)x \frac{\partial f}{\partial x} + \frac{1}{2}\sigma^2 x^2 \frac{\partial^2 f}{\partial x^2} - rf + \lambda \mathbb{E}^Q_Y \left[ f(xY, \tau) - f(x, \tau) \right] = 0
 \]
 
-\section*{2. Expresión en Forma de Integral}
+\section*{4.4.2. Expresión en Forma de Integral}
 
 La ecuación se reescribe considerando que \( G(Y) \) es la función de densidad de probabilidad de \( Y \), el cambio en el precio del activo en los eventos de salto. Esto nos lleva a una \textbf{ecuación diferencial parcial integro-diferencial} (13.11):
 
@@ -21,13 +23,13 @@ La ecuación se reescribe considerando que \( G(Y) \) es la función de densidad
 
 donde \( k = \int_{-\infty}^{\infty} Y G(Y) \, dY - 1 \), un término que representa la expectativa de los saltos ajustada para que el valor medio del cambio sea cero.
 
-\section*{3. Condiciones de Frontera e Iniciales}
+\section*{4.4.3. Condiciones de Frontera e Iniciales}
 
 Para resolver la ecuación, se aplican condiciones iniciales y de frontera específicas para una opción de compra (call option) sobre una acción:
 - \textbf{Condición de frontera:} \( f(0, \tau) = 0 \), ya que si el precio del activo es cero, la opción no tiene valor.
 - \textbf{Condición inicial:} \( f(x, 0) = \max(0, x - E) \), donde \( E \) es el precio de ejercicio de la opción.
 
-\section*{4. Solución en Términos de Black-Scholes sin Componentes de Salto}
+\section*{4.4.4. Solución en Términos de Black-Scholes sin Componentes de Salto}
 
 En el caso sin saltos (\( \lambda = 0 \)), la ecuación se reduce a la ecuación de Black-Scholes, cuya solución es:
 
@@ -41,7 +43,7 @@ donde
 d_1 = \frac{\ln(x/E) + (r + \sigma^2/2)\tau}{\sigma \sqrt{\tau}}, \quad d_2 = d_1 - \sigma \sqrt{\tau}
 \]
 
-\section*{5. Construcción de la Solución General con el Proceso Poisson}
+\section*{4.4.5. Construcción de la Solución General con el Proceso Poisson}
 
 Para la ecuación general, se asume que el número de saltos en el intervalo de tiempo sigue una distribución de Poisson con intensidad \( \lambda \), y se define el producto de variables aleatorias independientes y distribuidas de forma idéntica, \( X_n = \prod_{i=1}^n Y_i \), para modelar el efecto acumulado de \( n \) saltos.
 
