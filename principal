@@ -1,4 +1,7 @@
-El problema aquí se centra en encontrar la solución de la ecuación diferencial parcial integro-diferencial (13.10) para opciones sobre activos subyacentes con procesos de salto-difusión. Vamos a detallar los pasos involucrados en el desarrollo de esta solución y en la aplicación de las condiciones iniciales y de frontera.
+Recordemos que en la siguiente ecuación, \( t \) es el tiempo actual.
+\[
+\frac{\partial f}{\partial t} + (r - \lambda k)x \frac{\partial f}{\partial x} + \frac{1}{2} \sigma^2 x^2 \frac{\partial^2 f}{\partial x^2} - rf +
+
 
 \section*{1. Cambio de Variable en el Tiempo}
 
