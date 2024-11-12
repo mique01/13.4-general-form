@@ -68,7 +68,3 @@ El precio de la opción es, entonces, la expectativa de todos estos valores, don
 se toma sobre la distribución de Poisson (con parámetro \( \lambda_0 \tau \)) de que ocurran \( n \) saltos
 durante la vida de la opción.
 
-En las siguientes figuras mostramos el efecto en el precio de la opción y en delta
-al aumentar los valores de \( \lambda \). Aquí hemos utilizado los valores de los parámetros \( T = 1 \),
-\( E = 1 \), \( r = 0.05 \), \( \sigma = 0.2 \), \( \eta = 0 \) y \( \delta = 0.25 \).
-
